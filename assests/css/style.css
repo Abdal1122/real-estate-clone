@@ -1,6 +1,30 @@
+/*
+green #60b404, rgba(89,176,1,255) 
+light blue #f0f4f5, rgba(240,244,245,255) 
+light green #72c81b, rgba(144,200,27,255) 
+ */
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
+    --primarygreen:#60b404;
+    --secondarygreen:#72c81b;
+    --lightblue:#f0f4f5;
+    --black:#000000;
+    --white:#ffffff;
+
+
+    
 }
 
 html{
@@ -13,7 +37,7 @@ html{
     margin: 0 auto;
 }
 .top-socialbar-wrapper{
-    background-color: #60b404;
+    background-color: var(--primarygreen);
     padding: 3px 0;
    
 
@@ -61,6 +85,7 @@ html{
 
 .home-hero-wrapper figure img{
     display: block;
+    width: 100%;
 }
 
 .home-hero-wrapper figure{
@@ -77,10 +102,115 @@ html{
 }
 
 .home-hero-wrapper .overlay .overlay-inner{
-    background-color: red;
     width: 60%;
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
 
 }
+.home-hero-wrapper .overlay .overlay-inner h1{
+    font-size: 30px;
+}
+.home-hero-wrapper .overlay .overlay-inner h3, .home-hero-wrapper .overlay .overlay-inner h1{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.home-hero-wrapper .overlay .overlay-inner .high-light{
+    color: var(--primarygreen);
+}
+.home-hero-wrapper .overlay .overlay-inner p{
+    margin-bottom: 16px;
+    color: #fff;
+}
+.home-hero-wrapper .overlay .overlay-inner a:hover{
+    border: 1px solid transparent;
+    background-color: var(--primarygreen);
+    transition: 250ms;
+
+}
+.home-hero-wrapper .overlay .overlay-inner a{
+    padding: 6px 12px;
+    display: inline-block;
+    margin: 0 6px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.home-hero-wrapper .overlay .overlay-inner :nth-child(4){
+    margin-left: 0;
+}
+
+
+/* utility classes */
+.pl-0{
+    padding-left: 0!important;
+}
+.pr-0{
+    padding-right: 0;
+}
+
+.pt-0{
+    padding-top: 0;
+}
+
+.pb-0{
+    padding-bottom: 0;
+}
+
+.p-0{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /`sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+ }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .top-inner{
+        display: block;
+        justify-content: space-between;
+        
+    }
+    .socail-icons{
+        margin: top 12px; ;
+    }
+
+ }
+
+ /* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+ }
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+ }
+
